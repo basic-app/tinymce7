@@ -5,5 +5,8 @@
         "psr-4": {
             "BasicApp\\TinyMce7\\" : "src/"
         }
+    },
+    "require": {
+        "tinymce/tinymce": "^7"
     }
 }
