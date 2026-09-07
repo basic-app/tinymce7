@@ -4,7 +4,7 @@
  * @license MIT
  */
 $this->setVar('title', lang('Admin.Cells') . ' / ' . lang('Admin.TinyMCE 7 Settings'));
-$this->setVar('h1', lang('Admin.Cells'));
+$this->setVar('h1', lang('Admin.Settings'));
 $this->setVar('description', lang('Admin.TinyMCE 7 Settings'));
 $this->setVar('activeMenu', 'tinymce7-settings');
 
