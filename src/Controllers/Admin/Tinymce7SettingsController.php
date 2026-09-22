@@ -6,13 +6,13 @@
 namespace BasicApp\TinyMce7\Controllers\Admin;
 
 use App\Controllers\Admin\BaseController;
-use BasicApp\TinyMce7\Settings\TinyMce7Settings;
+use BasicApp\TinyMce7\Config\Tinymce7;
 
 class TinyMce7SettingsController extends BaseController
 {
     public function index()
     {
-        $data = new TinyMce7Settings;
+        $data = config(Tinymce7::class);
 
         if ($this->request->is('post')) 
         {
