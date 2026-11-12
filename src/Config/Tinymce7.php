@@ -5,7 +5,7 @@
  */
 namespace BasicApp\TinyMce7\Config;
 
-use BasicApp\Core\SettingsConfig;
+use BasicApp\Settings\SettingsConfig;
 
 class Tinymce7 extends SettingsConfig
 {
