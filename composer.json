@@ -3,10 +3,10 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "BasicApp\\TinyMce7\\" : "src/"
+            "BasicApp\\TinyMce7\\" : "src"
         }
     },
     "require": {
-        "tinymce/tinymce": "^7"
+        "basic-app/tinymce7-assets": "dev-main"
     }
 }
