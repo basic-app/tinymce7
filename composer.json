@@ -7,6 +7,6 @@
         }
     },
     "require": {
-        "basic-app/tinymce7-assets": "dev-main"
+        "basic-app/tinymce7-assets": "*"
     }
 }
