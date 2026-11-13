@@ -7,7 +7,8 @@
         }
     },
     "require": {
-        "basic-app/tinymce7-assets": "*",
+        "ext-zip": "*",
+        "basic-app/publisher": "*",
         "basic-app/settings": "*"
     }
 }
