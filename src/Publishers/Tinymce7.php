@@ -1,9 +1,11 @@
 <?php
+
 declare(strict_types=1);
 /**
  * @author Basic App Dev Team
  * @license MIT
  */
+
 namespace BasicApp\Tinymce7\Publishers;
 
 use BasicApp\Publisher\Publisher;
@@ -14,7 +16,7 @@ class Tinymce7 extends Publisher
      * Custom restrictions.
      */
     protected $customRestrictions = '*';
-    
+
     /**
      * Tell Publisher where to create destination directory.
      */
@@ -35,8 +37,7 @@ class Tinymce7 extends Publisher
      */
     public function publish(): bool
     {
-        if (!$this->isEmpty($this->destination))
-        {
+        if (!$this->isEmpty($this->destination)) {
             return true; // already installed
         }
 

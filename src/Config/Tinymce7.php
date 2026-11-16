@@ -1,9 +1,11 @@
 <?php
+
 declare(strict_types=1);
 /**
  * @author Basic App Dev Team
  * @license MIT
  */
+
 namespace BasicApp\TinyMce7\Config;
 
 use BasicApp\Settings\SettingsConfig;
@@ -27,7 +29,7 @@ class Tinymce7 extends SettingsConfig
     public function __construct()
     {
         parent::__construct();
-    
+
         $this->language ??= service('request')->getLocale();
 
         $this->relative_urls = (bool) $this->relative_urls;
@@ -35,7 +37,7 @@ class Tinymce7 extends SettingsConfig
         $this->br_in_pre = (bool) $this->br_in_pre;
     }
 
-    public function rules() : array
+    public function rules(): array
     {
         return [
             'toolbar' => [

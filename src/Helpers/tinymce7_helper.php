@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 /**
  * @author Basic App Dev Team
@@ -6,9 +7,8 @@ declare(strict_types=1);
  */
 use CodeIgniter\View\View;
 
-if (!function_exists('register_tinymce7'))
-{
-    function register_tinymce7(array $params = [], ?View $renderer = null) : void
+if (!function_exists('register_tinymce7')) {
+    function register_tinymce7(array $params = [], ?View $renderer = null): void
     {
         helper(['scripts', 'render_view']);
 

@@ -1,9 +1,11 @@
 <?php
+
 declare(strict_types=1);
 /**
  * @author Basic App Dev Team
  * @license MIT
  */
+
 namespace BasicApp\TinyMce7\Controllers\Admin;
 
 use App\Controllers\Admin\BaseController;
@@ -15,20 +17,16 @@ class TinyMce7SettingsController extends BaseController
     {
         $data = config(Tinymce7::class);
 
-        if ($this->request->is('post')) 
-        {
-            if ($this->validateData($this->request->getPost(), $data->rules())) 
-            {
+        if ($this->request->is('post')) {
+            if ($this->validateData($this->request->getPost(), $data->rules())) {
                 $data->fill($this->validator->getValidated());
 
                 $data->save();
 
                 $this->session->setFlashdata('success', lang($this->messageSaved));
-                    
+
                 return redirect()->to('admin/tinymce7-settings');
-            }
-            else
-            {
+            } else {
                 $errors = $this->validator->getErrors();
             }
         }
