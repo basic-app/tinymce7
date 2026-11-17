@@ -12,6 +12,6 @@ if (!function_exists('register_tinymce7')) {
     {
         helper(['scripts', 'render_view']);
 
-        add_script(render_view('BasicApp\TinyMce7\scripts', $params, $renderer), true, $renderer);
+        add_script(render_view('BasicApp\TinyMce7\scripts', $params), true, $renderer);
     }
 }

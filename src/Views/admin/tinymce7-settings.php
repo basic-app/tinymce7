@@ -1,9 +1,13 @@
 <?php
-declare(strict_types=1);
 /**
  * @author Basic App Dev Team
  * @license MIT
+ * 
+ * @var array $errors
+ * @var BasicApp\TinyMce7\Config\Tinymce7 $data
  */
+declare(strict_types=1);
+
 $this->setVar('title', lang('Admin.Cells') . ' / ' . lang('Admin.TinyMCE 7 Settings'));
 $this->setVar('h1', lang('Admin.Settings'));
 $this->setVar('description', lang('Admin.TinyMCE 7 Settings'));
