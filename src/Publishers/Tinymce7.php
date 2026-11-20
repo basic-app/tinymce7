@@ -15,12 +15,12 @@ class Tinymce7 extends Publisher
     /**
      * Custom restrictions.
      */
-    protected $customRestrictions = '*';
+    protected ?string $customRestrictions = '*';
 
     /**
      * Tell Publisher where to create destination directory.
      */
-    protected $createDestination = true;
+    protected bool $createDestination = true;
 
     /**
      * FCPATH is always the default destination,
